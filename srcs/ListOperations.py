@@ -79,9 +79,6 @@ class ListOperationsInterface:
 
         return self.liste == []
 
-    def est_dans(self, e) -> bool:
-        return True if e in self.liste else False
-
     def modifier(self, e, i) -> list:
         if self.longueur() - 1 < i:
             return self.liste
