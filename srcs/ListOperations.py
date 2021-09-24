@@ -29,7 +29,7 @@ class ListOperationsInterface:
         """
             Entrée: Element e(str)
             Sortie: -1 si l'élement n'est pas dans la liste sinon l'index de l'élement
-            Cherche un élement dans la liste et retourne -1 si il n'est pas trouvé sinon l'élement de l'index est retourné.
+            Cherche un élement dans la liste et retourne -1 si il n'est pas trouvé sinon l'index de l'élement est retourné.
         """
 
         if e not in self.liste:
