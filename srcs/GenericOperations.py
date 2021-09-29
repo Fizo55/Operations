@@ -31,26 +31,27 @@ class GenericOperations:
         del self.liste[0]
         return elementSommet
 
-# Pile test
-interface = GenericOperations()
-interface.cree_objet_vide()
-interface.depiler()
-print(interface.objet_vide())
-interface.empiler("Bonjour")
-interface.empiler("Ceci")
-interface.empiler("Est")
-interface.empiler("Un")
-interface.empiler("Test")
-print(interface.depiler())
+if __name__ == "__main__":
+    # Pile test
+    interface = GenericOperations()
+    interface.cree_objet_vide()
+    interface.depiler()
+    print(interface.objet_vide())
+    interface.empiler("Bonjour")
+    interface.empiler("Ceci")
+    interface.empiler("Est")
+    interface.empiler("Un")
+    interface.empiler("Test")
+    print(interface.depiler())
 
-# File test
-interface = GenericOperations('file')
-interface.cree_objet_vide()
-interface.depiler()
-print(interface.objet_vide())
-interface.empiler("Bonjour")
-interface.empiler("Ceci")
-interface.empiler("Est")
-interface.empiler("Un")
-interface.empiler("Test")
-print(interface.depiler())
+    # File test
+    interface = GenericOperations('file')
+    interface.cree_objet_vide()
+    interface.depiler()
+    print(interface.objet_vide())
+    interface.empiler("Bonjour")
+    interface.empiler("Ceci")
+    interface.empiler("Est")
+    interface.empiler("Un")
+    interface.empiler("Test")
+    print(interface.depiler())
