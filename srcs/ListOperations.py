@@ -85,20 +85,21 @@ class ListOperationsInterface:
         self.liste[i] = e
         return self.liste
 
-interface = ListOperationsInterface()
-interface.creer_liste_vide()
+if __name__ == "__main__":
+    interface = ListOperationsInterface()
+    interface.creer_liste_vide()
 
-interface.inserer("Bonjour", 0)
-interface.inserer("Ceci", 1)
-interface.inserer("Est", 2)
-interface.inserer("Un", 3)
-interface.inserer("Test", 4)
+    interface.inserer("Bonjour", 0)
+    interface.inserer("Ceci", 1)
+    interface.inserer("Est", 2)
+    interface.inserer("Un", 3)
+    interface.inserer("Test", 4)
 
-texte = interface.lire(0)
-print(texte)
+    texte = interface.lire(0)
+    print(texte)
 
-longueur = interface.longueur()
-print(longueur)
+    longueur = interface.longueur()
+    print(longueur)
 
-modification = interface.modifier("Bonsoir", 0)
-print(modification)
+    modification = interface.modifier("Bonsoir", 0)
+    print(modification)
