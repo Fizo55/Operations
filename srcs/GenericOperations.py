@@ -42,6 +42,7 @@ if __name__ == "__main__":
     interface.empiler("Est")
     interface.empiler("Un")
     interface.empiler("Test")
+    print(interface.liste)
     print(interface.depiler())
 
     # File test
@@ -54,4 +55,5 @@ if __name__ == "__main__":
     interface.empiler("Est")
     interface.empiler("Un")
     interface.empiler("Test")
+    print(interface.liste)
     print(interface.depiler())
